@@ -39,7 +39,7 @@ void app_main()
 
         // Distorcionar señal de voz (voz más aguda)
         aplificacion_val = abs(aplificacion_val); // Rectificación → mete armónicos altos
-        aplificacion_val = aplificacion_val / 2;  // Compresión para no saturar
+        aplificacion_val = aplificacion_val / 2; // Compresión para no saturar
 
         // Submuestreo: reproducir solo 1 de cada 2 muestras (acelera la señal)
         skip_val++;
